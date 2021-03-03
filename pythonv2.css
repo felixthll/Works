@@ -1,0 +1,168 @@
+@font-face {
+	font-family:'Saira Stencil One'; src: url(SairaStencilOne-Regular.ttf);
+}
+@font-face {
+	font-family:'Londrina Solid';src:url(LondrinaSolid-Regular.ttf);
+}
+@font-face {
+	font-family:'Cabin Sketch';src:url(CabinSketch-Bold.ttf);
+}
+@font-face {
+	font-family:'Cabin Sketch';src:url(CabinSketch-Bold.ttf);
+}
+@font-face {
+	font-family:'McLaren',src:url(McLaren-Regular.ttf);
+}
+
+section{
+	background-color: rgb(58,72,94);
+}
+
+a {color: white;
+padding: 40px;
+}
+
+a:hover{
+	color: rgb(58,72,94);
+}
+
+#lien {
+	font-size: 18px;
+}
+
+nav { background-color: #B09E80;
+text-align: center;
+padding: 20px;
+border-radius: 20px;
+font-family: 'Raleway', sans-serif;
+}
+
+a{
+text-decoration: none;
+
+}
+
+body{
+	background-color: rgb(58,72,94);
+	border-bottom-color:rgba(247, 249, 250);
+}
+
+#bouton {
+text-align: center;
+}
+
+#real:hover {
+	color: #B09E80;
+}
+
+
+#realisee {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	background-color: rgb(58,72,94);
+	color: rgba(247, 249, 250);
+	
+}
+
+#p2 {
+	 background-color: #B09E80;
+	 color: rgba(247, 249, 250);
+	 text-align: center;
+	 border-radius: 20px;
+	 margin-right: 50px;
+	 margin-left: 50px;
+	 font-family: 'Raleway', sans-serif;
+}
+
+#p1 {
+	background-color: rgb(58,72,94);
+	 color: rgba(247, 249, 250);
+	 text-align: center;
+}
+
+#p3 {
+	background-color: rgb(58,72,94);
+	color: rgba(247, 249, 250);
+	 text-align: center;
+}
+
+#auto {
+	font-family: 'Raleway', sans-serif;
+}
+
+#fonc {
+	font-size:45px;font-family: 'Raleway', sans-serif;
+}
+
+#foncpara {
+	font-family: 'Raleway', sans-serif;
+}
+
+#contact {
+	font-family: 'Raleway', sans-serif;
+}
+
+#contpara {
+	font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+	text-align: center;
+}
+
+#marque{
+	font-family: 'Raleway', sans-serif;
+}
+
+#php{
+	background-color:  #B09E80;
+	font-family: 'Raleway', sans-serif;
+	float: left;
+	font-size: 15px;
+
+}
+
+#sub{
+	border-radius: 60px;
+	color: #B09E80;
+	font-size: 15px;
+}
+
+#t{
+	border-bottom-color: : rgba(247, 249, 250);
+	border-radius: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	background-color: rgb(58,72,94);
+	float: left;
+
+}
+
+#p{
+	float: right;
+}
+
+#t::-ms-clear{
+	display: none;
+}
+
+#t::selection{
+	display: none;
+}
+
+#t::placeholder{
+	color: rgba(247, 249, 250);
+}
+
+#img{
+	background-color: #B09E80;
+}
+
+#i:hover{
+	background-color:rgb(58,72,94);
+}
+
+
+
+

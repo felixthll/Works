@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<link rel="shortcut icon" href="W.png">
+
+	<title>Works</title>
+	
+	<meta name="description"content="PY, le site qui automatise vos exercices "/>
+	
+	<link rel="stylesheet" type="text/css" href="pythonv2.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Londrina+Solid|McLaren|Saira+Stencil+One&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Londrina+Solid|McLaren|Saira+Stencil+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+
+</head>
+
+<section>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+	<div id="p1">
+
+	<br>
+
+	<div id="bandeau">
+
+<div id="lien">
+
+<nav>
+
+<a style="font-size: 20px;" href="/Users/felixthiollier/Desktop/Programmation/Python/Site/pythonv2.html" >Acceuil</a>
+
+<a  style="font-size: 20px;" href="/Users/felixthiollier/Desktop/Programmation/Python/Site/geometrie.html">Géométrie</a>
+
+<a  style="font-size: 20px;" href="/Users/felixthiollier/Desktop/Programmation/Python/Site/nombres.html">Nombres</a>
+
+<a style="font-size: 20px;" href="/Users/felixthiollier/Desktop/Programmation/Python/Site/divers.html">Divers</a>
+
+
+<?php
+ 
+$bdd = new PDO('mysql:host=localhost;dbname=bdr;charset=utf8','root','root');
+ 
+$articles = $bdd->query('SELECT titre FROM articles ORDER BY id DESC');
+if(isset($_GET['q']) AND !empty($_GET['q'])) {
+   $q = htmlspecialchars($_GET['q']);
+   $articles = $bdd->query('SELECT titre FROM articles WHERE titre LIKE "%'.$q.'%" ORDER BY id DESC');
+   if($articles->rowCount() == 0) {
+      $articles = $bdd->query('SELECT titre FROM articles WHERE CONCAT(titre, contenu) LIKE "%'.$q.'%" ORDER BY id DESC');
+   }
+}
+?>
+
+<form method="GET">
+   <input type="search" name="q" placeholder="Recherche..." />
+   <input type="submit" value="Valider" />
+</form>
+<?php if($articles->rowCount() > 0) { ?>
+   <ul>
+   <?php while($a = $articles->fetch()) { ?>
+      <li><?= $a['titre'] ?></li>
+   <?php } ?>
+   </ul>
+<?php } else { ?>
+Aucun résultat pour: <?= $q ?>...
+<?php } ?>
+
+</div>
+
+</nav>
+
+<div id="logo">
+
+	<a href="/Users/felixthiollier/Desktop/Programmation/Python/Site/pythonv2.html"><img src="logov3 copie.png" alt="logo PY" style="text-align: center"></a>
+
+	</div>
+
+	<MARQUEE direction="up" scrollamount="2">
+
+<div id="marque"><h2 style="text-align: center; color: rgba(247, 249, 250);">Bienvenue sur Works ! Découvrez le fonctionnement du site puis commencez à l'utiliser !</h2></div>
+
+</MARQUEE>
+
+<br><br>
+
+<div id="p2">
+
+<br><br>
+
+<div id="fonc"><h1> Le fonctionnement</h1></div>
+	
+<div id="foncpara"><h2>Works est un site qui automatise vos calculs de math, principalement ceux qui sont longs et difficiles.<br><br>Pour trouver le calcul automatisé qui vous intéresse, rendez vous dans le menu et cliqué sur le thème de votre choix.<br><br> Ensuite, choisissez le calcul voulu, répondez aux questions le concernant et l'exercice résolu s'affiche.</h2></div>
+
+<br><br>
+
+
+
+</div>
+
+<div id="p3">
+
+<br><br>
+
+		<div id="contact"><h1>Contact</h1></div>
+
+		<br>
+
+		<div id="contpara"><h2>Vous pouvez nous conctacter par : </h2></div>
+			
+			<br>
+			<br>
+			<br>
+
+
+<div id="bouton">
+	
+
+<a href="mailto:felixthiollier63@gmail.com?subject=Demande de contact"><img src="aa.png" alt="logo e-mail" height="70" align="center"></a>&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+
+	<a href="https://twitter.com/fel_thll"><img src="a.png" alt="logo twitter" align="center" height="70"></a>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+	
+	<a href="https://www.instagram.com/fel_thll/"><img src="aaa.png" alt="logo instagram" align="center" height="70"></a>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr size="1" style="color: white;">
+
+<div id="realisee">
+
+<br><br>
+
+<FONT size="2"> Réalisé par Félix THIOLLIER <br><br> © 2020 <br><br> <a id="real" href="www.works-thll.com">www.works-thll.com</a></FONT>
+
+</div>
+
+</div>
+
+</br>
+
+</div id="p3">
+
+</section>
+
+</div>
+
+</body>
+
+</htlm>

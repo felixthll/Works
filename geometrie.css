@@ -1,0 +1,133 @@
+
+@font-face {
+	font-family:'Saira Stencil One'; src: url(SairaStencilOne-Regular.ttf);
+}
+@font-face {
+	font-family:'Londrina Solid';src:url(LondrinaSolid-Regular.ttf);
+}
+@font-face {
+	font-family:'Cabin Sketch';src:url(CabinSketch-Bold.ttf);
+}
+@font-face {
+	font-family:'Cabin Sketch';src:url(CabinSketch-Bold.ttf);
+}
+@font-face {
+	font-family:'McLaren',src:url(McLaren-Regular.ttf);
+}
+
+section{
+	background-color: rgb(58,72,94);
+}
+
+a {color: white;
+padding: 40px;
+}
+
+a:hover{
+	color: rgb(58,72,94);
+}
+
+body{
+		background-color: rgb(58,72,94);
+}
+
+#lien {
+	font-size: 18px;
+}
+
+nav { background-color: #B09E80;
+text-align: center;
+padding: 20px;
+border-radius: 20px;
+margin-left: 200px;
+margin-right: 200px;
+font-family: 'Raleway', sans-serif;
+}
+
+a{
+text-decoration: none;
+
+}
+
+#bouton {
+text-align: center;
+}
+
+#realisee {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	background-color: rgb(58,72,94);
+	color: rgba(247, 249, 250);
+	border-radius: 10px;
+	margin-left: 650px;
+	margin-right: 650px;
+}
+
+#p2 {
+	 background-color: #B09E80;
+	 color: rgba(247, 249, 250);
+	 text-align: center;
+	 border-radius: 20px;
+	 margin-right: 50px;
+	 margin-left: 50px;
+}
+
+#p1 {
+	background-color: rgb(58,72,94);
+	 color: rgba(247, 249, 250);
+	 text-align: center;
+}
+
+#p3 {
+	background-color: rgb(58,72,94);
+	color: rgba(247, 249, 250);
+	 text-align: center;
+}
+
+#auto {
+	font-family: 'Raleway', sans-serif;
+}
+
+#fonc {
+	font-size:45px;font-family: 'Raleway', sans-serif;
+}
+
+#foncpara {
+	font-family: 'Raleway', sans-serif;
+}
+
+#contact {
+	font-size:45px;font-family: 'Raleway', sans-serif;
+}
+
+#contpara {
+	font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+	text-align: center;
+}
+
+#marque{
+	font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	text-align: left;
+}
+
+#real:hover {
+	color: #B09E80;
+}
+
+iframe {
+	border-radius: 20px;
+	text-align: left;
+}
+
+
+
+
+
+
